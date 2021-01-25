@@ -8,3 +8,11 @@ const fun = (name,age)=>{
 const person = fun('herve',35);
 
 person.me();
+
+const myName = name => {
+    const out = () => { console.log(name.toUpperCase()); }
+    return { name, out }
+}
+
+const theName = myName('herve');
+theName.out()
