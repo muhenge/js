@@ -16,3 +16,15 @@ const myName = name => {
 
 const theName = myName('herve');
 theName.out()
+
+const otherFun = ()=> {
+    return() => {
+         console.log('one');
+        }
+}
+    
+
+
+const other = otherFun();
+other()
+otherFun();
